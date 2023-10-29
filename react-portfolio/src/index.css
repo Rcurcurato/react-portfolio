@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   justify-content: center;
+  background-color:darkslategray;
+  color: white;
+  
+
 }
 
 code {
@@ -25,6 +29,75 @@ code {
   width: 350px;
   height: 300px;
 }
-.container h1{
+
+
+
+.project-container h1{
   text-align: center;
+  padding: 5%;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header nav {
+
+
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.contact-me {
+display: flex;
+justify-content: center;
+margin: 50px;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  background-image: url('/wood-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
 }
