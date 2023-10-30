@@ -3,7 +3,9 @@ import React from "react";
 function Footer() {
 
     return (
-        <ion-icon name="logo-github"></ion-icon>
+        <footer>
+            <h2>Created By Ronald Curcurato</h2>
+        </footer>
     )
 
 }

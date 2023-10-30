@@ -1,11 +1,16 @@
 import React from 'react';
 
-function Nav(props) { 
+function Nav(props) {
 
-    const { 
+    const {
         currentPage,
         handlePageChange,
     } = props;
+
+    const linkStyle = {
+        color: 'black',
+        textDecoration: 'none',
+    };
 
     return (
         <nav>
@@ -15,8 +20,9 @@ function Nav(props) {
                         href="/about"
                         onClick={() => handlePageChange('about')}
                         className={currentPage === 'about' ? 'nav-link active' : 'nav-link'}
+                        style={linkStyle}
                     >
-                        About 
+                        About
                     </a>
                 </li>
                 <li className="nav-item">
@@ -24,6 +30,7 @@ function Nav(props) {
                         href="/portfolio"
                         onClick={() => handlePageChange('portfolio')}
                         className={currentPage === 'portfolio' ? 'nav-link active' : 'nav-link'}
+                        style={linkStyle}
                     >
                         Portfolio
                     </a>
@@ -33,6 +40,7 @@ function Nav(props) {
                         href="/contact"
                         onClick={() => handlePageChange('contact')}
                         className={currentPage === 'contact' ? 'nav-link active' : 'nav-link'}
+                        style={linkStyle}
                     >
                         Contact
                     </a>
@@ -42,6 +50,7 @@ function Nav(props) {
                         href="/resume"
                         onClick={() => handlePageChange('resume')}
                         className={currentPage === 'resume' ? 'nav-link active' : 'nav-link'}
+                        style={linkStyle}
                     >
                         Resume
                     </a>
