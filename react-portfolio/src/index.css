@@ -3,11 +3,35 @@ body {
   font-family: 'roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:darkcyan;
-  color: black;
+  background-color: white;
   font-family: 'Poppins', sans-serif;
-  
+  background-image: linear-gradient(to right, white 0%, rgb(0, 132, 172) 100%);
+}
+.ContactForm h3,
+.ContactForm h1{
+  text-align: center;
+  padding: 10px;
 
+}
+
+.submit-btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+    
+}
+
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  border: solid black;
 }
 
 code {
@@ -27,11 +51,24 @@ code {
   height: 300px;
 }
 
+.col-margin {
+  padding: 50px;
+}
 
-
-.project-container h1{
+.project-container {
+  padding: 10px;
   text-align: center;
-  padding: 5%;
+  font-weight: bold;
+  height: 100vh;
+
+}
+
+.project-container h1 {
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
 }
 
 .about-me {
@@ -42,8 +79,20 @@ code {
   margin: 0 auto;
   width: 50%;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   text-align: center;
+  font-weight: bold;
+}
+
+.about-me h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+}
+
+.about-me p {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .profile-pic {
@@ -52,22 +101,26 @@ code {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-  width: 300px;
+  width: 400px;
   padding: 20px;
   margin-bottom: 20px;
+
 }
 
 header {
   display: flex;
   justify-content: space-between;
+  background-color: white;
+  padding: 20px;
 }
 
-header h1 {
+header h2 {
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 header nav {
-
-
+  font-weight: bolder;
 }
 
 .button {
@@ -80,10 +133,10 @@ header nav {
   margin-top: 10px;
 }
 
-.contact-me {
-display: flex;
-justify-content: center;
-margin: 50px;
+.contact-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .resume {
@@ -98,7 +151,7 @@ margin: 50px;
 
 .hero img {
   width: 100%;
-  height: 300px;
+  height: 400px;
   display: block;
   margin: 0;
   padding: 0;
@@ -107,7 +160,7 @@ margin: 50px;
 
 .hero .hero-text {
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -118,7 +171,7 @@ margin: 50px;
 .hero p {
   font-size: 20px;
   position: absolute;
-  top: 70%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -130,5 +183,97 @@ margin: 50px;
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 30px;
+  height: 100px;
+  background-color: white;;
 }
 
+footer h3 {
+  font-weight: bold;
+}
+
+footer a {
+  font-size: 50px;
+  margin: 10px;
+  color: black;
+}
+
+footer a:hover {
+  color: skyblue;
+}
+
+.project-card {
+  position: relative;
+  width: 100%;
+}
+
+.project-card:hover a {
+  visibility: visible;
+}
+
+.project-card a {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: black;
+  opacity: 70%;
+  visibility: hidden;
+}
+
+.project-card a:hover {
+  opacity: 100%;
+  color: skyblue
+}
+
+.project-card a:first-child {
+  left: 40%;
+}
+.project-card a:last-child {
+  left: 60%;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  height: 100vh;
+}
+
+
+.resume h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  border-bottom: solid black;
+  padding-bottom: 10px;
+}
+
+.resume a {
+  font-size: 80px;
+  font-weight: bold;
+  color: black;
+  margin: 10px;
+
+}
+
+.resume a:hover {
+  color: skyblue;
+}
+
+.resume ul {
+  font-size: 20px;
+  font-weight: bold;
+  border: solid black;
+  background-color: white;
+  box-shadow: 5px 5px black;
+  
+}
