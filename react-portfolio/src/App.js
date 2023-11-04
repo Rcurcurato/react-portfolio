@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import components from React Router
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; 
 
 import Header from "./components/Header";
 import About from "./components/About";
