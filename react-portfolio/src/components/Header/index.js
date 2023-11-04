@@ -8,7 +8,7 @@ function Header(props) {
         <div>
             <section>
                 <header>
-                    <h2 className='nav-bar'>Ronnie Curcurato's Portfolio</h2>
+                    <h2 className='nav-bar'>Ronald Curcurato's Portfolio</h2>
                     <nav>
                         <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
                     </nav>

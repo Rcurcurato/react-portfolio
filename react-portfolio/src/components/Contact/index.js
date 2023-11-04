@@ -24,12 +24,12 @@ const ContactForm = () => {
                 <div className='row'>
                     <div className='col-12 center-content'>
                         <div className='contactForm'>
-                            <h1>Need to contact me?</h1>
+                            <h1 className='contact-header'>Contact Me</h1>
+                            <h1>Questions or Concerns?</h1>
                             <h3>Feel free to reach out
                                 by filling out the form below.
                             </h3>
                             <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
-                                {/* Row 1 of form */}
                                 <div className='row formRow'>
                                     <div className='col-6'>
                                         <input
@@ -63,7 +63,6 @@ const ContactForm = () => {
                                         )}
                                     </div>
                                 </div>
-                                {/* Row 2 of form */}
                                 <div className='row formRow'>
                                     <div className='col'>
                                         <input
@@ -84,7 +83,6 @@ const ContactForm = () => {
                                         )}
                                     </div>
                                 </div>
-                                {/* Row 3 of form */}
                                 <div className='row formRow'>
                                     <div className='col'>
                                         <textarea
